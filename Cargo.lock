@@ -342,7 +342,7 @@ dependencies = [
 
 [[package]]
 name = "shinmy"
-version = "1.0.0"
+version = "1.1.0"
 dependencies = [
  "embed-resource",
  "notify",
@@ -353,7 +353,7 @@ dependencies = [
 
 [[package]]
 name = "shinmy-mallet"
-version = "1.0.0"
+version = "1.1.0"
 dependencies = [
  "rand",
  "tauri-winres",
