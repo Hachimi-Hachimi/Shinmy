@@ -36,7 +36,7 @@ fn create_watcher(
             else if event.kind.is_modify() && path_lower == src_dll_lower {
                 _ = timeout_reset.send(());
                 // wait a lil bit so dmm finishes its checks
-                std::thread::sleep(std::time::Duration::from_secs(1));
+                std::thread::sleep(std::time::Duration::from_secs(3));
                 move_target_dll(&dest_dll, &src_dll);
             }
         }
