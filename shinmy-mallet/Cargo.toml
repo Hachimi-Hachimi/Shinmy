@@ -1,0 +1,28 @@
+[package]
+name = "shinmy-mallet"
+version = "1.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+widestring = "1.1"
+rand = "0.8"
+
+[dependencies.windows]
+version = "0.58"
+features = [
+    "Win32_System_LibraryLoader",
+    "Win32_System_SystemInformation",
+    "Win32_UI_Shell",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_System_Threading"
+]
+
+[build-dependencies]
+tauri-winres = "0.1"
+
+[package.metadata.tauri-winres]
+ProductName = "Shinmy Miracle Mallet"
+FileDescription = "Shinmy Miracle Mallet"
